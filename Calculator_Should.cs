@@ -24,15 +24,12 @@ namespace Kontur.Courses.Git
 		public void OneArg()
 		{
 			Assert.AreEqual(42, Calc("42").Value);
-			Assert.AreEqual(43, Calc("43").Value);
 		}
 
 		[Test]
 		public void ZeroArg()
 		{
-			Assert.AreEqual(42, Calc("42").Value);
-			Assert.AreEqual(42, Calc("").Value);
-			Assert.AreEqual(42, Calc("").Value);
+			Assert.AreEqual(0, Calc("").Value);
 		}
 
 		[Test]
