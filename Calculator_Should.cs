@@ -29,7 +29,8 @@ namespace Kontur.Courses.Git
 		[Test]
 		public void ZeroArg()
 		{
-			Assert.AreEqual(0, Calc("").Value);
+			Assert.AreEqual(42, Calc("42").Value);
+			Assert.AreEqual(42, Calc("").Value);
 		}
 
 		[Test]
